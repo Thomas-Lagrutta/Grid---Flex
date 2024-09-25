@@ -1,0 +1,33 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo de la galería con Flexbox */
+.flex-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Organiza las imágenes en múltiples filas */
+    justify-content: space-around; /* Distribuye las imágenes uniformemente */
+    gap: 20px; /* Espacio entre las imágenes */
+    max-width: 1200px; /* Máximo ancho de la galería */
+    margin: 0 auto; /* Centra la galería */
+}
+
+/* Estilo de las imágenes */
+.flex-gallery img {
+    flex: 30%; /* Cada imagen ocupa el 30% del contenedor */
+    max-width: 100%; /* Evita que las imágenes se estiren más allá de su contenedor */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
